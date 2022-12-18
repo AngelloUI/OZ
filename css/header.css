@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+}
+a.logo{
+    display: block;
+    float: left;
+    width: 191px;
+    height: 122px;
+    overflow: hidden;
+}
+div.header-right{
+    height: 122px;
+    margin-left: 191px;
+    padding: 5px 10px 5px 10px;
+}
+ul.header-ul{
+    list-style-type: none;
+}
+li.header-ul-left{
+    float: left;
+    line-height: 30px;
+}
+span.or{
+    color: #999;
+}
+span.phone-number{
+    display: block;
+    margin: 0 5px 0 0;
+    float: left;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    line-height: 30px;
+}
+span.phone-operator{
+    display: block;
+    font-size: 16px;
+    line-height: 30px;
+    color: #999;
+}
+
+
