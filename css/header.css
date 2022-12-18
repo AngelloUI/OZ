@@ -1,31 +1,40 @@
-*{
+* {
     margin: 0;
     padding: 0;
     line-height: 0;
 }
-a.logo{
+
+div.wrapper {
+    max-width: 1400px;
+    min-width: 1000px;
+    margin: 0 auto;
+}
+
+a.logo {
     display: block;
     float: left;
     width: 191px;
     height: 122px;
     overflow: hidden;
 }
-div.header-right{
+
+div.header-right {
     height: 122px;
     margin-left: 191px;
     padding: 5px 10px 5px 10px;
 }
-ul.header-ul{
+
+ul.header-ul {
     list-style-type: none;
 }
-li.header-ul-left{
+
+li.header-ul-left {
     float: left;
     line-height: 30px;
+    padding: 0 10px 0 10px;
 }
-span.or{
-    color: #999;
-}
-span.phone-number{
+
+span.phone-number {
     display: block;
     margin: 0 5px 0 0;
     float: left;
@@ -34,11 +43,154 @@ span.phone-number{
     color: #333;
     line-height: 30px;
 }
-span.phone-operator{
+
+span.phone-operator {
     display: block;
-    font-size: 16px;
+    float: left;
+    font-size: 14px;
     line-height: 30px;
     color: #999;
 }
 
+span.or {
+    color: #999;
+    font-size: 14px;
+}
 
+a.order-ring {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+a.order-ring:hover {
+    text-decoration: underline;
+    color: #999;
+}
+
+a.text-us {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+a.text-us:hover {
+    text-decoration: underline;
+    color: #999;
+}
+
+a.discounts {
+    text-decoration: none;
+    color: #cd4500;
+    background-color: #fff1c0;
+    padding: 3px 5px;
+    font-size: 14px;
+}
+
+li.header-ul-right {
+    float: right;
+    line-height: 30px;
+    padding: 0 10px;
+}
+
+a.payment {
+    display: block;
+    line-height: 30px;
+    font-size: 14px;
+    color: #999;
+    text-decoration: none;
+    margin: 0 10px 0 0;
+}
+
+a.delivery {
+    display: block;
+    line-height: 30px;
+    font-size: 14px;
+    color: #999;
+    text-decoration: none;
+}
+
+a.help {
+    display: block;
+    line-height: 30px;
+    font-size: 14px;
+    color: #999;
+    text-decoration: none;
+}
+
+a.bonus-program {
+    display: block;
+    line-height: 30px;
+    font-size: 14px;
+    color: #999;
+    text-decoration: none;
+}
+
+div.clear {
+    clear: both;
+}
+
+/*div.header-right-bottom{
+
+}*/
+form.search {
+    display: block;
+    float: left;
+    margin: 10px;
+    min-width: 400px;
+    max-width: 800px;
+    line-height: 36px;
+    border: 3px solid #a8e1ff;
+    border-radius: 5px;
+    position: relative;
+}
+
+input.search {
+    display: block;
+    float: left;
+    width:100%;
+    box-sizing: border-box;
+    padding: 0 60px 0 10px;
+    border: none;
+    outline: none;
+    height: 36px;
+    line-height: 36px;
+    font-size: 16px;
+    position: relative;
+}
+input.search-submit{
+    display: block;
+    float: right;
+    height: 36px;
+    width: 50px;
+    border: none;
+    border-left: 1px solid #999;
+    outline: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    background-image: url("/img/lupa.png");
+}
+button.login{
+    display: block;
+    float: left;
+    margin: 11px;
+    height: 38px;
+    width: 165px;
+    border: 1px solid #999;
+    border-radius: 3px;
+}
+button.login:hover{
+    border: 1px solid #777;
+}
+a.basket{
+    color: #cd4500;
+    float: right;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+}
+a.basket:hover{
+    text-decoration: underline;
+}
