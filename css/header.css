@@ -4,6 +4,10 @@
     line-height: 0;
 }
 
+div.clear {
+    clear: both;
+}
+
 div.wrapper {
     max-width: 1400px;
     min-width: 1000px;
@@ -19,9 +23,14 @@ a.logo {
 }
 
 div.header-right {
+    /*float: left;*/
     height: 122px;
     margin-left: 191px;
-    padding: 5px 10px 5px 10px;
+    padding: 5px 10px 5px 0px;
+}
+
+div.header-right_top {
+    float: left;
 }
 
 ul.header-ul {
@@ -80,11 +89,16 @@ a.text-us:hover {
 }
 
 a.discounts {
-    text-decoration: none;
-    color: #cd4500;
-    background-color: #fff1c0;
+    display: block;
+    margin: 4px 0 4px 0;
     padding: 3px 5px;
     font-size: 14px;
+    line-height: 22px;
+    text-decoration: none;
+    border-radius: 4px;
+    border: none;
+    color: #cd4500;
+    background-color: #fff1c0;
 }
 
 li.header-ul-right {
@@ -126,28 +140,67 @@ a.bonus-program {
     text-decoration: none;
 }
 
-div.clear {
-    clear: both;
+div.header-right-bottom{
+    float: left;
+    width: 100%;
 }
 
-/*div.header-right-bottom{
+div.buttons{
+    width: 280px;
+    height: 62px;
+    position: relative;
+    float: right;
+}
 
-}*/
+button.login{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 12px;
+    height: 38px;
+    width: 165px;
+    border: 1px solid #999;
+    border-radius: 3px;
+}
+
+button.login:hover{
+    border: 1px solid #777;
+    cursor: pointer;
+}
+
+a.basket{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0 10px 0 10px;
+    color: #cd4500;
+    text-decoration: none;
+    font-size: 17px;
+    line-height: 62px;
+    font-weight: bold;
+}
+
+a.basket:hover{
+    text-decoration: underline;
+}
+
 form.search {
     display: block;
-    float: left;
-    margin: 10px;
-    min-width: 400px;
-    max-width: 800px;
+    position: relative;
+    height: 36px;
+    margin: 10px 300px 10px 10px;
     line-height: 36px;
     border: 3px solid #a8e1ff;
     border-radius: 5px;
-    position: relative;
 }
 
 input.search {
     display: block;
-    float: left;
+    position: absolute;
+    top: 0;
+    left: 0;
     width:100%;
     box-sizing: border-box;
     padding: 0 60px 0 10px;
@@ -156,13 +209,13 @@ input.search {
     height: 36px;
     line-height: 36px;
     font-size: 16px;
-    position: relative;
 }
+
 input.search-submit{
     display: block;
-    float: right;
     height: 36px;
     width: 50px;
+    background: url("/img/lupa.png");
     border: none;
     border-left: 1px solid #999;
     outline: none;
@@ -170,27 +223,10 @@ input.search-submit{
     top: 0;
     right: 0;
     z-index: 10;
-    background-image: url("/img/lupa.png");
 }
-button.login{
-    display: block;
-    float: left;
-    margin: 11px;
-    height: 38px;
-    width: 165px;
-    border: 1px solid #999;
-    border-radius: 3px;
+
+input.search-submit:hover
+{
+    cursor: pointer;
 }
-button.login:hover{
-    border: 1px solid #777;
-}
-a.basket{
-    color: #cd4500;
-    float: right;
-    text-decoration: none;
-    font-size: 17px;
-    font-weight: bold;
-}
-a.basket:hover{
-    text-decoration: underline;
-}
+
